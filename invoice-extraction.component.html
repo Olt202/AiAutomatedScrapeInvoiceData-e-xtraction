@@ -1,0 +1,14 @@
+<div>
+  <h2>Invoice Data Extraction</h2>
+  <input
+    type="file"
+    (change)="handleFileInput($event)">
+  <button (click)="extractData()">Extract data</button>
+
+  <div *ngIf="extractedData">
+    <h3>Extracted data</h3>
+    <ul>
+      <li *ngFor="let item of extractedData">{{ item }}</li>
+    </ul>
+  </div>
+</div>

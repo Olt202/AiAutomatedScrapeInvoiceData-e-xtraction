@@ -1,0 +1,6 @@
+logs/
+
+config.json
+secrets.json
+
+*.tmp
